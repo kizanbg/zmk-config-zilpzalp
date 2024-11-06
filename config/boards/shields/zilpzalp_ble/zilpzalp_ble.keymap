@@ -16,7 +16,6 @@
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
 };
 
-
 / {
     combos {
         compatible = "zmk,combos";
