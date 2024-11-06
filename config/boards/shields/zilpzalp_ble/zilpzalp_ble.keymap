@@ -22,33 +22,18 @@
 /* usually on base layer */
         combo_q {
             timeout-ms = <40>;
-            key-positions = <2 3>;
+            key-positions = <0 1>;
             bindings = <&kp Q>;
         };
-        combo_z {
+        combo_p {
             timeout-ms = <40>;
-            key-positions = <20 21>;
-            bindings = <&kp Z>;
+            key-positions = <6 7>;
+            bindings = <&kp P>;
         };
-        combo_v {
+        combo_g {
             timeout-ms = <40>;
-            key-positions = <1 2>;
-            bindings = <&kp V>;
-        };
-        combo_slash {
-            timeout-ms = <40>;
-            key-positions = <24 25>;
-            bindings = <&kp SLASH>;
-        };
-        combo_minus {
-            timeout-ms = <40>;
-            key-positions = <23 24>;
-            bindings = <&kp MINUS>;
-        };
-        combo_esc {
-            timeout-ms = <40>;
-            key-positions = <21 22>;
-            bindings = <&kp ESC>;
+            key-positions = <11 12>;
+            bindings = <&kp G>;
         };
 /* parentheticals */
         combo_lbrc {
@@ -103,20 +88,10 @@
             bindings = <&kp CAPSLOCK>;
         };
 /* deletion */
-        combo_bspc {
-            timeout-ms = <40>;
-            key-positions = <16 17>;
-            bindings = <&kp BSPC>;
-        };
         combo_del {
             timeout-ms = <40>;
             key-positions = <17 18>;
             bindings = <&kp DEL>;
-        };
-        combo_delword {
-            timeout-ms = <40>;
-            key-positions = <16 18>;
-            bindings = <&kp LC(BSPC)>;
         };
     };
 };
@@ -186,10 +161,10 @@
             label = "APT";
 
             bindings = <
-                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
-                                                             &lt NUM SQT    &lt NAV SPACE  &lt SYM E      &lt FUN ENTER
+                               &kp W          &kp E          &kp R          &kp T          &kp Y          &kp U          &kp I          &kp O
+                &hl LCTRL Z    &hl LALT A     &hl LGUI S     &hl LSHFT D    &hl RALT F     &hr RALT H     &hr RSHFT J    &hr RGUI K     &hr LALT L     &hr RCTRL ENTER
+                               &kp X          &kp C          &kp V                                        &kp B          &kp N          &kp M
+                                                             &lt NUM ESC    &lt NAV SPACE  &lt SYM BSPC   &lt FUN ENTER
             >;
         };
         numbers {
