@@ -1,11 +1,11 @@
-#include <behaviors.dtsi>
+z#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 #define APT 0
 #define NUM 1
 #define NAV 2
 #define SYM 3
-#define FUN 4
+#define FUN 4 
 
 // &lt {
 //     quick_tap_ms = <170>;
@@ -43,18 +43,8 @@ combo_##NAME { \
         compatible = "zmk,combos";
 /* usually on base layer */
         COMBO(q, &kp Q, 1 2)
-        COMBO(z, &kp Z, 18 19)
-        COMBO(v, &kp V, 0 1)
-        COMBO(_ae, &kp RA(A), 15 26)
-        COMBO(_oe, &kp RA(O), 17 26)
-        COMBO(_ue, &kp RA(U), 6 26)
-        COMBO(_sz, &kp RA(S), 9 25)
-        COMBO(sch, &macro_sch, 0 2)
-        COMBO(slash, &kp SLASH, 22 23)
-        COMBO(dash, &kp MINUS, 21 22)
-//        COMBO(enter, &kp ENTER, 21 22 23)
-        COMBO(enter, &kp ENTER, 21 23)
-        COMBO(esc, &kp ESC, 19 20)
+        COMBO(p, &kp P, 6 7)
+        COMBO(g, &kp G, 11 12)
 /* parentheticals */
         COMBO(lbrc, &kp LBRC, 0 9)
         COMBO(lbkt, &kp LBKT, 1 10)
@@ -120,8 +110,8 @@ combo_##NAME { \
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <450>;
+            quick-tap-ms = <500>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -133,8 +123,8 @@ combo_##NAME { \
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <450>;
+            quick-tap-ms = <500>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -147,8 +137,8 @@ combo_##NAME { \
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <450>;
+            quick-tap-ms = <500>;
             // global-quick-tap;
             bindings = <&mo &kp>, <&kp>;
             // non-thumb keys
