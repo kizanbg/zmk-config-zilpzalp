@@ -44,7 +44,7 @@ combo_##NAME { \
 /* usually on base layer */
         COMBO(q, &kp Q, 0 1)
         COMBO(z, &kp H, 11 12)
-        COMBO(v, &kp P, 6 7)
+        COMBO(v, &kp G, 6 7)
         COMBO(_ae, &kp RA(A), 15 26)
         COMBO(_oe, &kp RA(O), 17 26)
         COMBO(_ue, &kp RA(U), 6 26)
